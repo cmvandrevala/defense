@@ -156,7 +156,7 @@
 \begin{frame}{Problem Solving}
 	\begin{enumerate}
 		\item Expert vs. Novice
-		\item Polya's Method
+		\item Polya's Method\footfullcite{polya1985}
 		\begin{itemize}
 			\item Define the Problem
 			\item Create a Plan
@@ -350,7 +350,7 @@
 \subsection{Gains in Student Performance}
 
 \begin{frame}{Overall Course Grade}
-	\framesubtitle{Cut By PHYS 17200}
+	\framesubtitle{Cut By PHYS 17200 Grade}
 	\begin{columns}
 		\begin{column}{0.5\textwidth}
 			\begin{figure}
@@ -374,7 +374,7 @@
 \end{frame}
 
 \begin{frame}{Overall Course Grade}
-	\framesubtitle{Cut By PHYS 17200}
+	\framesubtitle{Cut By PHYS 17200 Grade}
 	\begin{columns}
 		\begin{column}{0.5\textwidth}
 			\begin{figure}
@@ -397,13 +397,119 @@
 	\end{columns}
 \end{frame}
 
+\begin{frame}{Overall Course Grade}
+	\framesubtitle{Cut By PHYS 17200 Grade}
+	\begin{figure}
+		\includegraphics[width=0.5\textwidth]{img/overall_sp16_172_filtered.pdf}
+	\end{figure}
+	We still get statistically significant results for B and C grades if we eliminate the points in the lower-left hand corner of the graph. The slopes of the graphs drop by a factor of two or three.
+\end{frame}
+
+\begin{frame}{Overall Course Grade}
+	\framesubtitle{Cut By Previous Calculus Grade}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=1.0\textwidth]{img/overall_fa15_calculus.pdf}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}	
+			\begin{table}[ht]
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					& \textbf{m} & \textbf{b} & \textbf{$R^2$} & \textbf{p}\\
+					\hline
+					A & 0.038 & 381 & 0.05 & 3.1e-3 \\
+					B & 0.028 & 345 & 0.03 & 3.2e-2\\
+					C & 0.038 & 314 & 0.04 & 5.3e-2 \\
+					\hline
+				\end{tabular}
+			\end{table}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Overall Course Grade}
+	\framesubtitle{Cut By Previous Calculus Grade}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=1.0\textwidth]{img/overall_sp16_calculus.pdf}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}	
+			\begin{table}[ht]
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					& \textbf{m} & \textbf{b} & \textbf{$R^2$} & \textbf{p}\\
+					\hline
+					A & 0.069 & 327 & 0.17 & 2.1e-4 \\
+					B & 0.066 & 301 & 0.22 & 1.0e-4\\
+					C & 0.062 & 313 & 0.17 & 1.9e-3 \\
+					\hline
+				\end{tabular}
+			\end{table}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Overall Course Grade}
+	\framesubtitle{Cut By Section}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=1.0\textwidth]{img/overall_fa15_section.pdf}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}	
+			\begin{table}[ht]
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					& \textbf{m} & \textbf{b} & \textbf{$R^2$} & \textbf{p}\\
+					\hline
+					C & 0.052 & 343 & 0.10 & 2.2e-16 \\
+					O & 0.150 & 285 & 0.13 & 1.3e-3\\
+					\hline
+				\end{tabular}
+			\end{table}
+			On-Campus = C\\
+			Online = O
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Overall Course Grade}
+	\framesubtitle{Cut By Section}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=1.0\textwidth]{img/overall_sp16_section.pdf}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}	
+			\begin{table}[ht]
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					& \textbf{m} & \textbf{b} & \textbf{$R^2$} & \textbf{p}\\
+					\hline
+					C & 0.080 & 305 & 0.20 & 2.2e-16 \\
+					O & 0.239 & 204 & 0.28 & 6.0e-4\\
+					\hline
+				\end{tabular}
+			\end{table}
+			On-Campus = C\\
+			Online = O
+		\end{column}
+	\end{columns}
+\end{frame}
+
 \begin{frame}{BEMA Gain}
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.45\textwidth]{img/bema_fa15_gain.pdf}
-\includegraphics[width=0.45\textwidth]{img/bema_sp16_gain.pdf}
-\caption{Student gains on the BEMA as a function of reported CITA use. The students shown in these plots are all in on-campus sections of PHYS 24100. The spring semester has a p-value of 0.2025 and an $R^2$ value of 0.0. The fall semester has a p-value of 1.48e-5, but an $R^2$ value of 0.03.}
-\end{figure}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.45\textwidth]{img/bema_fa15_gain.pdf}
+		\includegraphics[width=0.45\textwidth]{img/bema_sp16_gain.pdf}
+		\caption{Student gains on the BEMA as a function of reported CITA use. The students shown in these plots are all in on-campus sections of PHYS 24100. The spring semester has a p-value of 0.2025 and an $R^2$ value of 0.0. The fall semester has a p-value of 1.48e-5, but an $R^2$ value of 0.03.}
+	\end{figure}
 \end{frame}
 
 \begin{frame}{Multi-Step Problem}
@@ -428,9 +534,9 @@
       \hline
       6 & 2 & 12 & 9\\
       \hline
-      \textbf{Mean} & \textbf{2.628} & \textbf{2.902} & \textbf{2.9471}\\
+      \textbf{Mean} & \textbf{2.63} & \textbf{2.90} & \textbf{2.95}\\
       \hline
-      \textbf{Standard Deviation} & \textbf{1.386} & \textbf{1.418} & \textbf{1.3595}\\
+      \textbf{Standard Deviation} & \textbf{1.39} & \textbf{1.42} & \textbf{1.36}\\
       \hline
     \end{tabular}
   \end{center}
@@ -531,6 +637,66 @@
 		\caption{In the summer and fall of 2015, a linear model did not fit the data due to the small sample sizes ($p = 0.177$ and $p = 0.146$, respectively). In the spring of 2016, a linear model did not fit the data due to the large range of Overall Grades ($p = 0.165$).}
 		\label{fig:overall_grade_vs_clicks_ap_students}
 	\end{figure}
+\end{frame}
+
+\subsection{Individual Grade Components}
+
+\begin{frame}{Source of Gains}
+	A few notes...
+	\begin{itemize}
+		\item Out of the five types of graded components of PHYS 24100, three of them showed a prominent ceiling effect.
+		\item Even in cases where the linear model applied, the effect sizes were generally small ($R^2 < 0.10$).
+		\item It is difficult to compare the non-normalized linear models for the Overall Grades and the grade components. Thus, I will scale the slope from the linear models by their maximum y-value in order to normalize them.
+	\end{itemize}
+	\vspace{3mm}
+	\begin{equation}
+		m_{max} = \frac{0.086 \hspace{1mm} points/click}{500 \hspace{1mm}  points} = 1.7 \times 10^{-4}
+	\end{equation}
+	\begin{equation}
+		m_{min} = \frac{0.018  \hspace{1mm} points/click}{500 \hspace{1mm}  points} = 3.6 \times 10^{-5}
+	\end{equation}
+\end{frame}
+
+\begin{frame}{Overall Homework Grade}
+	\framesubtitle{Cut By PHYS 17200 Grade}
+	\begin{figure}
+		\includegraphics[width=0.5\textwidth]{img/homework_fa15_172.pdf}
+		\includegraphics[width=0.5\textwidth]{img/homework_sp16_172.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Overall Recitation Grade}
+	\framesubtitle{Cut By PHYS 17200 Grade}
+	\begin{figure}
+		\includegraphics[width=0.5\textwidth]{img/recitation_fa15_172.pdf}
+		\includegraphics[width=0.5\textwidth]{img/recitation_sp16_172.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Overall Lecture Quiz Grade}
+	\framesubtitle{Cut By PHYS 17200 Grade}
+	\begin{figure}
+		\includegraphics[width=0.5\textwidth]{img/lecture_fa15_172.pdf}
+		\includegraphics[width=0.5\textwidth]{img/lecture_sp16_172.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Midterm Exams}
+	\framesubtitle{Cut By PHYS 17200 Grade}
+	\begin{figure}
+		\includegraphics[width=0.44\textwidth]{img/exam_fa15_172.pdf}
+		\includegraphics[width=0.44\textwidth]{img/exam_sp16_172.pdf}
+	\end{figure}
+	These linear models did have statistically significant fits ($ p < 0.05$), and the normalized slopes were in the range of $m = 0.01 / 200 = 5.0 \times 10^{-5}$ to $m = 0.02 / 200 = 1.0 \times 10^{-4}$.
+\end{frame}
+
+\begin{frame}{Final Exam}
+	\framesubtitle{Cut By PHYS 17200 Grade}
+	\begin{figure}
+		\includegraphics[width=0.44\textwidth]{img/final_fa15_172.pdf}
+		\includegraphics[width=0.44\textwidth]{img/final_sp16_172.pdf}
+	\end{figure}
+	These linear models did have statistically significant fits ($ p < 0.05$), and the normalized slopes were in the range of $m = 0.007 / 100 = 7.0 \times 10^{-5}$ to $m = 0.01 / 100 = 1.0 \times 10^{-4}$.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
