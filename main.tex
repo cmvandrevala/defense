@@ -64,17 +64,151 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\scshape Background}
+\section{\scshape Introduction and Background}
 
-\subsection{Electricity and Optics}
+\subsection{The Class (Electricity and Optics)}
 
 \begin{frame}{Electricity and Optics}
 	\framesubtitle{PHYS 24100 and 24100D}
+	\begin{itemize}
+		\item Second Semester of Introductory Physics
+		\vspace{2mm}
+		\item The ``D'' Signifies a Distance Learning Section
+		\vspace{2mm}
+		\item Uses Tipler and Mosca as the Textbook\footfullcite{tipler2003}
+		\vspace{2mm}
+		\item Uses CHIP as the Homework System
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{``On Semester'' vs. ``Off Semester''}
+	\framesubtitle{PHYS 24100 and 24100D}
+	\begin{itemize}
+		\item Fall is generally considered the on-semester while spring and summer are considered the off-semesters.
+		\vspace{4mm}
+		\item PHYS 17200 grades are generally higher in the fall semester than in the spring or summer.
+		\vspace{4mm}
+		\item Calculus grades are not significantly different between the fall, spring, and summer semesters.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Online vs. Campus Students}
+	\framesubtitle{PHYS 24100 and 24100D}
+	\begin{itemize}
+		\item Just under 10\% of the class is enrolled in a distance learning section in the spring and fall semesters.
+		\vspace{2mm}
+		\item 100\% of the students are enrolled in a distance learning section during the summer.
+		\vspace{2mm}
+		\item PHYS 17200 are not significantly different between the online and on-campus sections within a semester.
+		\vspace{2mm}
+		\item Calculus grades are not significantly different between the online and on-campus sections within a semester.
+		\vspace{2mm}
+		\item We see rising enrollment numbers in the summer semester.
+	\end{itemize}
+\end{frame}
+
+\subsection{Motivation for CITA}
+
+\begin{frame}{The Need for CITA}
+	\begin{quote}
+	With all due respect, I am very displeased with CHIP.  It took me 45 minutes to solve one problem because I didn't round correctly.  I know it is not my place to say this, but I think that online HW submission programs should be done away with at universities like Purdue.  With that being said, I am going to power through this year in physics!
+	\end{quote}
+	\vspace{5mm}
+	- Anonymous Student, Fall 2014 Semester
+\end{frame}
+
+\begin{frame}{The Need for CITA}
+	\begin{quote}
+	Thank you for the help section in this problem! It was very well written and helped me figure out the problem and (hopefully) similar ones in the future!
+	\end{quote}
+	\vspace{5mm}
+	- CHIP Error Report from Fall 2014
+\end{frame}
+
+\begin{frame}{The Need for CITA}
+	\begin{quote}
+	I found the IE [interactive examples] extremely helpful, and want these to continue to be available. It was much more helpful than examples in the book or just completing the homework, and I think it'd be great for more complicated problems especially.
+	\end{quote}
+	\vspace{5mm}
+	- CHIP Error Report from Spring 2015
+\end{frame}
+
+\subsection{Theoretical Background}
+
+\begin{frame}{Constructivism}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\textwidth]{img/constructivism_circular_motion.png}
+		\caption{Real world example of circular motion\footfullcite{arulselvam2014}.}
+		\label{fig:constructivism_example_part_1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Constructivism}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\textwidth]{img/constructivism_vectors.png}
+		\caption{Abstracted example of circular motion\footfullcite{wikiUCM}.}
+		\label{fig:constructivism_example_part_2}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Problem Solving}
+	\begin{enumerate}
+		\item Expert vs. Novice
+		\item Polya's Method
+		\begin{itemize}
+			\item Define the Problem
+			\item Create a Plan
+			\item Solve the Problem
+			\item Check Your Answer
+		\end{itemize}
+	\end{enumerate}
 \end{frame}
 
 \subsection{The CITA System}
 
-\begin{frame}{CITA on CHIP}
+\begin{frame}{Shallow CITA}
+	\begin{figure}
+		\includegraphics[width=1.0\textwidth]{img/shallow_cita_example.png}
+		\caption{Shallow CITA is used to target specific errors that students make on their homework.}
+		\label{fig:shallow_cita_example}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Immersive CITA}
+	\begin{figure}
+		\includegraphics[width=1.0\textwidth]{img/immersive_cita_example.png}
+		\caption{Immersive CITA provides a detailed tutorial that students can use to step through a problem.}
+		\label{fig:immersive_cita_example}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Postscripts}
+	\begin{figure}
+		\includegraphics[width=1.0\textwidth]{img/postscript_example.png}
+		\caption{Postscripts cover the last step of Polya's problem solving process.}
+		\label{fig:postscript_example}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Project Goals}
+	\begin{enumerate}
+		\item Design a framework that can be used to build online tutorials with multiple paths of analysis.
+		\item Convert homework problems into interactive examples using Shallow CITA, Immersive CITA, and Postscripts.
+		\item Analyze student performance between semesters and within a semester.
+		\item Align teaching methods used in the classroom with those used on CITA.
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Research Questions}
+	\begin{enumerate}
+		\item How do the interactive examples influence the learning of physics concepts and problem solving skills?
+		\vspace{5mm}
+		\item Who is using the interactive examples on the homework?
+		\vspace{5mm}
+		\item What are students perceptions about the CITA system?
+	\end{enumerate}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,6 +256,28 @@
 	\end{enumerate}
 \end{frame}
 
+\subsection{Quantitative Procedures}
+
+\begin{frame}{Quantitative Data}
+	Quantitative data came from a variety of sources:
+	\begin{itemize}
+		\item Homework, Quiz, and Exam Scores
+		\item BEMA Concept Inventory
+		\item Multi-Step Problem
+		\item End-of-Semester Surveys Based on Likert Scale
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Quantitative Data}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.35\textwidth]{img/matlab_example_1.png}
+		\includegraphics[width=0.50\textwidth]{img/matlab_example_2.png}
+		\caption{Additionally, we could track student clicks within the assignments.}
+		\label{fig:matlab_examples}
+	\end{figure}
+\end{frame}
+
 \subsection{Qualitative Procedures}
 
 \begin{frame}{Strategy of Inquiry}
@@ -133,7 +289,7 @@
 		\item Focus Group Sessions
 	\end{itemize}
 	\vspace{5mm}
-	We analyzed the data using a three-cycle coding plan\footfullcite{saldana2012}:
+	We analyzed the qualitative data for this \textit{phenomenological study} using a three-cycle coding plan\footfullcite{saldana2012}:
 	\vspace{1mm}
 	\begin{itemize}
 		\item \textbf{First Cycle:} Attribute and Descriptive Coding
@@ -178,12 +334,137 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\scshape Results}
+\section{\scshape Major Results}
 
-\subsection{Student Motivations}
+\begin{frame}{Two Major Results}
+	There are a lot of interesting results that have come from this study. We are going to focus on two.
+	\vspace{2mm}
+	\begin{enumerate}
+		\item Gains in Student Performance
+		\item Efficiency and Learning
+	\end{enumerate}
+	\vspace{5mm}
+	We will talk about the structures of CITA within item \#2. I will talk about student opinions of CITA in my back-up slides if there is time (opinions were generally positive).
+\end{frame}
+
+\subsection{Gains in Student Performance}
+
+\begin{frame}{Overall Course Grade}
+	\framesubtitle{Cut By PHYS 17200}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=1.0\textwidth]{img/overall_fa15_172.pdf}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}	
+			\begin{table}[ht]
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					& \textbf{m} & \textbf{b} & \textbf{$R^2$} & \textbf{p}\\
+					\hline
+					A & 0.018 & 420 & 0.02 & 6.5e-2 \\
+					B & 0.027 & 356 & 0.03 & 1.6e-3 \\
+					C & 0.046 & 316 & 0.08 & 4.3e-4 \\
+					\hline
+				\end{tabular}
+			\end{table}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Overall Course Grade}
+	\framesubtitle{Cut By PHYS 17200}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=1.0\textwidth]{img/overall_sp16_172.pdf}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}	
+			\begin{table}[ht]
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					& \textbf{m} & \textbf{b} & \textbf{$R^2$} & \textbf{p}\\
+					\hline
+					A & 0.080 & 348 & 0.16 & 1.8e-3 \\
+					B & 0.064 & 314 & 0.17 & 2.5e-6\\
+					C & 0.086 & 268 & 0.24 & 7.8e-7 \\
+					\hline
+				\end{tabular}
+			\end{table}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{BEMA Gain}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.45\textwidth]{img/bema_fa15_gain.pdf}
+\includegraphics[width=0.45\textwidth]{img/bema_sp16_gain.pdf}
+\caption{Student gains on the BEMA as a function of reported CITA use. The students shown in these plots are all in on-campus sections of PHYS 24100. The spring semester has a p-value of 0.2025 and an $R^2$ value of 0.0. The fall semester has a p-value of 1.48e-5, but an $R^2$ value of 0.03.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Multi-Step Problem}
+\begin{table}[ht]
+  \caption{A chi-squared test of the data above yields a p-value of 0.001 and an effect size (Cramer's V) of 0.117. We are seeing distinct improvements in student's scores from semester to semester.}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      \textbf{Score} & \textbf{Spring 2015} & \textbf{Fall 2015} & \textbf{Spring 2016}\\
+      \hline
+      0 & 42 & 57 & 16\\
+      \hline
+      1 & 32 & 49 & 17\\
+      \hline
+      2 & 73 & 94 & 15\\
+      \hline
+      3 & 126 & 200 & 71\\
+      \hline
+      4 & 73 & 171 & 53\\
+      \hline
+      5 & 23 & 47 & 17\\
+      \hline
+      6 & 2 & 12 & 9\\
+      \hline
+      \textbf{Mean} & \textbf{2.628} & \textbf{2.902} & \textbf{2.9471}\\
+      \hline
+      \textbf{Standard Deviation} & \textbf{1.386} & \textbf{1.418} & \textbf{1.3595}\\
+      \hline
+    \end{tabular}
+  \end{center}
+  \label{tab:multi-step}
+\end{table}
+\end{frame}
+
+\subsection{``Efficiency'' and Learning}
 
 \begin{frame}{Efficiency}
 	More than anything else, students are interested in completing the homework as quickly and efficiently as possible.
+\end{frame}
+
+\begin{frame}{Efficiency}
+	\framesubtitle{End of Problem}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.45\textwidth]{img/retention_general.pdf}
+		\includegraphics[width=0.45\textwidth]{img/retention_filtered.pdf}
+		\caption{Students generally do not reach the end of a tutorial.}
+		\label{fig:retention_examples}
+	\end{figure}	
+\end{frame}
+
+\begin{frame}{Efficiency}
+	\framesubtitle{Step Function}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.42\textwidth]{img/step_function_1.png}
+		\hspace{2mm}
+		\includegraphics[width=0.51\textwidth]{img/step_function_2.png}
+		\caption{Student retention as they pass over a tedious step in the tutorials.}
+		\label{fig:step_function_examples}
+	\end{figure}	
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -191,29 +472,27 @@
 
 \section{\scshape Conclusions}
 
-\subsection{Summary}
-\begin{frame}{Summary}
-    \begin{itemize}
-        \item We paired a number of tutorials with homework problems
-        \item Thematic Analysis of Online Homework Systems
-        \item Cupcake Physics
-    \end{itemize}
+\subsection{Conclusions}
+
+\begin{frame}{Summary of Results}
+	\begin{itemize}
+		\item We developed a number of tutorials that were paired with the homework problems.
+		\item We saw small, but statistically significant gains for students who used the CITA tutorials.
+		\item We studied how students used the tutorials within their work schedule.
+		\begin{itemize}
+			\item Students really liked Shallow CITA
+			\item Students generally liked Immersive CITA
+			\item Postscripts were generally never used
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-\subsection{Future Directions}
 \begin{frame}{Future Directions}
-    \begin{itemize}
-        \item At Purdue
-        \begin{itemize}
-            \item Write Up Piazza Results
-            \item Thematic Analysis of Online Homework Systems
-        \end{itemize}
-        \vspace{3mm}
-        \item For Me Personally
-        \begin{itemize}
-            \item Cupcake Physics
-        \end{itemize}
-    \end{itemize}
+	\begin{itemize}
+		\item Write Up Piazza Results
+		\item Thematic Analysis of Online Homework Systems
+		\item Cupcake Physics
+	\end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
