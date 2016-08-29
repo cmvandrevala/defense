@@ -31,11 +31,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 
 \beamertemplatenavigationsymbolsempty
 
-\title{The Development of CITA}
+\title{The Development of a Computerized Interactive Teaching Assistant in Physics}
+\subtitle{The CITA on CHIP Project}
 \author{
     Presenter: Cyrus Vandrevala\\
     \vspace{3mm}
@@ -76,18 +91,7 @@
 		\vspace{2mm}
 		\item Uses Tipler and Mosca as the Textbook\footfullcite{tipler2003}
 		\vspace{2mm}
-		\item Uses CHIP as the Homework System
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{``On Semester'' vs. ``Off Semester''}
-	\framesubtitle{PHYS 24100 and 24100D}
-	\begin{itemize}
-		\item Fall is generally considered the on-semester while spring and summer are considered the off-semesters.
-		\vspace{4mm}
-		\item PHYS 17200 grades are generally higher in the fall semester than in the spring or summer.
-		\vspace{4mm}
-		\item Calculus grades are not significantly different between the fall, spring, and summer semesters.
+		\item Uses CHIP as the Homework System\footfullcite{chip_homepage}
 	\end{itemize}
 \end{frame}
 
@@ -95,14 +99,30 @@
 	\framesubtitle{PHYS 24100 and 24100D}
 	\begin{itemize}
 		\item Just under 10\% of the class is enrolled in a distance learning section in the spring and fall semesters.
-		\vspace{2mm}
-		\item 100\% of the students are enrolled in a distance learning section during the summer.
-		\vspace{2mm}
-		\item PHYS 17200 are not significantly different between the online and on-campus sections within a semester.
-		\vspace{2mm}
-		\item Calculus grades are not significantly different between the online and on-campus sections within a semester.
-		\vspace{2mm}
-		\item We see rising enrollment numbers in the summer semester.
+		\vspace{4mm}
+		\item All students are enrolled in online sections during the summer semester (with rising enrollment each year).
+		\vspace{4mm}
+		\item We see a larger proportion of female students in the online sections than in the on-campus sections (60-40 in some cases).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Online vs. Campus Students}
+	\framesubtitle{PHYS 24100 and 24100D}
+	\begin{itemize}
+		\item Self-reported PHYS 17200 grades are not significantly different between the online and on-campus sections within a semester, according to chi-squared tests of the grade distributions.
+		\vspace{4mm}
+		\item Self-reported calculus grades are not significantly different between the online and on-campus sections within a semester, according to chi-squared tests of the grade distributions.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{``On Semester'' vs. ``Off Semester''}
+	\framesubtitle{PHYS 24100 and 24100D}
+	\begin{itemize}
+		\item Fall is generally considered the on-semester while spring and summer are considered the off-semesters.
+		\vspace{3mm}
+		\item Self-reported PHYS 17200 grades are generally higher in the fall semester than in the spring or summer, according to chi-squred tests of the grade distributions.
+		\vspace{3mm}
+		\item Self-reported calculus grades are not significantly different between the fall, spring, and summer semesters, according to chi-squared tests of the grade distributions.
 	\end{itemize}
 \end{frame}
 
@@ -154,7 +174,11 @@
 
 \begin{frame}{Problem Solving}
 	\begin{enumerate}
-		\item Expert vs. Novice
+		\item Expert vs. Novice Problem Solvers\footfullcite{maloney1994}
+		\begin{itemize}
+			\item Different Strategies\footfullcite{walsh2007}
+			\item Epistemic Games\footfullcite{redish2006}
+		\end{itemize}
 		\item Polya's Method\footfullcite{polya1985}
 		\begin{itemize}
 			\item Define the Problem
@@ -183,6 +207,18 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Immersive CITA}
+	We implemented three different structures of tutorials.
+	\vspace{5mm}
+	\begin{enumerate}
+		\item Detailed Step-by-Step Tutorial
+		\vspace{3mm}
+		\item Truncated Step-by-Step Tutorial
+		\vspace{3mm}	
+		\item Branching Tutorial
+	\end{enumerate}
+\end{frame}
+
 \begin{frame}{Postscripts}
 	\begin{figure}
 		\includegraphics[width=1.0\textwidth]{img/postscript_example.png}
@@ -208,6 +244,8 @@
 		\vspace{5mm}
 		\item What are students perceptions about the CITA system?
 	\end{enumerate}
+	\vspace{5mm}
+	This presentation will focus on \#1 and one aspect of \#3.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -272,7 +310,7 @@
 		\centering
 		\includegraphics[width=0.35\textwidth]{img/matlab_example_1.png}
 		\includegraphics[width=0.50\textwidth]{img/matlab_example_2.png}
-		\caption{Additionally, we could track student clicks within the assignments.}
+		\caption{We could track student clicks within the assignments.}
 		\label{fig:matlab_examples}
 	\end{figure}
 \end{frame}
@@ -335,15 +373,15 @@
 
 \section{\scshape Major Results}
 
-\begin{frame}{Two Major Results}
-	There are a lot of interesting results that have come from this study. We are going to focus on two.
-	\vspace{2mm}
+\begin{frame}{I Have Picked Two Interesting Topics}
+	There are a lot of interesting findings that have come from this study. We are going to focus on two.
+	\vspace{3mm}
 	\begin{enumerate}
 		\item Gains in Student Performance
 		\item Efficiency and Learning
 	\end{enumerate}
 	\vspace{5mm}
-	We will talk about the structures of CITA within item \#2. I will talk about student opinions of CITA in my back-up slides if there is time (opinions were generally positive).
+	We will talk about the structures of CITA within item \#2.
 \end{frame}
 
 \subsection{Gains in Student Performance}
@@ -502,36 +540,57 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}{BEMA Gain}
+\begin{frame}{Overall Course Grade}
+	\begin{enumerate}
+		\item The linear fit is getting better with each passing semester.
+		\vspace{2mm}
+		\item These small slopes add up to big gains in the class.
+		\vspace{2mm}
+		\item Online students are clicking far less than on-campus students (skewing the linear models).
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{BEMA Normalized Gain}
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=0.45\textwidth]{img/bema_fa15_gain.pdf}
 		\includegraphics[width=0.45\textwidth]{img/bema_sp16_gain.pdf}
-		\caption{Student gains on the BEMA as a function of reported CITA use. The students shown in these plots are all in on-campus sections of PHYS 24100. The spring semester has a p-value of 0.2025 and an $R^2$ value of 0.0. The fall semester has a p-value of 1.48e-5, but an $R^2$ value of 0.03.}
+		\caption{Student gains on the BEMA as a function of number of CITA clicks. The students shown in these plots are all in on-campus sections of PHYS 24100. The spring semester has a p-value of 0.2025 and an $R^2$ value of 0.00. The fall semester has a p-value of 1.48e-5 and an $R^2$ value of 0.03.}
 	\end{figure}
 \end{frame}
 
 \begin{frame}{Multi-Step Problem}
+	\begin{itemize}
+		\item We administered an optics problem in the on-campus recitations under test-like conditions as a measure of student problem solving abilities.
+		\item We then developed a six point rubric to assess student performance during each semester.
+	\end{itemize}
+	\vspace{1mm}
+	\noindent\makebox[\linewidth]{\rule{12cm}{0.4pt}}
+	
+	{\small A laser beam of power P = 10.0 W and diameter D = 1.00 mm is directed upward onto one circular face of a perfectly reflecting cylinder. The cylinder levitates due to the balance between the upward radiation force and the downward gravitational force. If the density of the cylinder is 1.25 g/cm3, and the diameter of the circular face is 0.50 mm, what is the height H of the cylinder?}
+\end{frame}
+
+\begin{frame}{Multi-Step Problem}
 \begin{table}[ht]
-  \caption{A chi-squared test of the data above yields a p-value of 0.001 and an effect size (Cramer's V) of 0.117. We are seeing distinct improvements in student's scores from semester to semester.}
+  \caption{A chi-squared test of the data above yields a p-value of 0.001 and an effect size (Cramer's V) of 0.117. We are seeing improvements in student's scores between spring 2015 and spring 2016.}
   \begin{center}
     \begin{tabular}{|c|c|c|c|}
       \hline
       \textbf{Score} & \textbf{Spring 2015} & \textbf{Fall 2015} & \textbf{Spring 2016}\\
       \hline
-      0 & 42 & 57 & 16\\
+      {\color{DeepPink4} 0} &  {\color{DeepPink4} 11.32\%} &  {\color{DeepPink4} 9.05\%} &  {\color{DeepPink4} 8.08\%}\\
       \hline
-      1 & 32 & 49 & 17\\
+      1 & 8.63\% & 7.78\% & 8.58\%\\
       \hline
-      2 & 73 & 94 & 15\\
+      {\color{DeepPink4} 2} & {\color{DeepPink4} 19.68\%} & {\color{DeepPink4} 14.92\%} & {\color{DeepPink4} 7.58\%}\\
       \hline
-      3 & 126 & 200 & 71\\
+      3 & 33.96\% & 31.75\% & 35.86\%\\
       \hline
-      4 & 73 & 171 & 53\\
+      {\color{DodgerBlue3} 4} & {\color{DodgerBlue3} 19.68\%} & {\color{DodgerBlue3} 27.14\%} & {\color{DodgerBlue3} 26.77\%}\\
       \hline
-      5 & 23 & 47 & 17\\
+      {\color{DodgerBlue3} 5} & {\color{DodgerBlue3} 6.20\%} & {\color{DodgerBlue3} 7.46\%} & {\color{DodgerBlue3} 8.58\%}\\
       \hline
-      6 & 2 & 12 & 9\\
+      {\color{DodgerBlue3} 6} & {\color{DodgerBlue3} 0.53\%} & {\color{DodgerBlue3} 1.90\%} & {\color{DodgerBlue3} 4.55\%}\\
       \hline
       \textbf{Mean} & \textbf{2.63} & \textbf{2.90} & \textbf{2.95}\\
       \hline
@@ -543,10 +602,58 @@
 \end{table}
 \end{frame}
 
+\begin{frame}{Multi-Step Problem}
+	\begin{figure}
+		\includegraphics[width=0.7\textwidth]{img/multi-step_vs_reported_use.pdf}
+	\end{figure}
+\end{frame}
+
 \subsection{``Efficiency'' and Learning}
 
+\begin{frame}
+	\begin{center}
+		Let's switch gears a little bit...
+	\end{center}
+\end{frame}
+
 \begin{frame}{Efficiency}
-	More than anything else, students are interested in completing the homework as quickly and efficiently as possible.
+	\begin{itemize}
+		\item This was the part of the research that I found most interesting.
+		\item Students really liked the fact that our tutorials were optional.
+		\item More than anything else, students are interested in completing the homework as quickly and efficiently as possible.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Efficiency}
+	\begin{quote}
+		There's, every once in a while I have to go through, do something [an Immersive CITA tutorial] twice, but usually it's only once.
+	\end{quote}
+	\vspace{5mm}
+	- Student, Spring 2016
+\end{frame}
+
+\begin{frame}{Efficiency}
+	\begin{quote}
+		So, typically, um, I usually start, I'd say I probably work about 10:00 to noon on Friday mornings,...
+	\end{quote}
+	\vspace{5mm}
+	- Student, Spring 2016
+\end{frame}
+
+\begin{frame}{Efficiency}
+	\begin{quote}
+		Um, unfortunately sometimes I'm in a haste to get the homework done so I don't always have time to you know, read them [the Postscripts]. I'm just like, ``Okay, next problem.''
+	\end{quote}
+	\vspace{5mm}
+	- Student, Spring 2016
+\end{frame}
+
+\begin{frame}{Efficiency}
+	\begin{itemize}
+		\item Students create a toolbox of resources that they use to complete the homework problems.
+		\item ``Back in the old days'' it was very difficult to switch between sources.
+		\item The internet allows students to juggle different sources at a moment's notice.
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Efficiency}
@@ -575,7 +682,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\scshape Conclusions}
+\section{\scshape Summary}
 
 \subsection{Conclusions}
 
@@ -598,6 +705,12 @@
 		\item Thematic Analysis of Online Homework Systems
 		\item Cupcake Physics
 	\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+	\begin{center}
+		Questions?
+	\end{center}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
